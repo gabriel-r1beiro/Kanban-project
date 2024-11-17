@@ -14,7 +14,7 @@ export const Cards = ({prioryt, srcUser, text}: CardParams) => {
     <aside className="card">
         <div className="card">
             <span className={`priority ${prioryt.slice(0, 1)}`}>{prioryt}</span>
-            <p className="text-cart">{text}</p>
+            <p className={` text-cart `}>{text}</p>
 
             <div className="cart-img">
                 <span className="msg"><BiMessage /></span>

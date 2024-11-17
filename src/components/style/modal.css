@@ -1,0 +1,15 @@
+.dialog-conteiner{
+    width: 300px;
+    height: 500px;
+}
+
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog-conteiner{
+    width: 20rem;
+    background-color: red;
+}

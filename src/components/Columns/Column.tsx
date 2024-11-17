@@ -2,12 +2,18 @@ import { Cards } from "../Card/Cards"
 import { Header } from "./Header"
 
 import "../style/columns.css";
-
-export const Column = () => {
+import { Modals } from "./Modals";
+import { useState } from "react";
+interface ColumnPrams {
+    title: string;
+}
+export const Column = ({title}: ColumnPrams) => {
+    const [open, setOpen] = useState(false)
+    const handleClose = () => 
     return (
         <section className="column">
-            <Header title="Pendente" color="red"/>
-
+            <Header title={title} color="red" />
+            <Modals isOpen={open} isClose={handleClose}/>
             <Cards
                 prioryt="Alta Prioridade"
                 text="Testes em andamento, entregamos em uma semana, ou pulamos da ponte daqui uma semana ok chefe, e amanha vou faltar"  

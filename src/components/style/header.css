@@ -31,4 +31,5 @@ header button{
 
 .title-col{
     font-weight: 700;
+    text-transform: capitalize;
 }
