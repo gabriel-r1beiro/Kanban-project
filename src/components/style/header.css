@@ -1,0 +1,34 @@
+.column header{
+    background-color: var(--header-backeground-color);
+    color: var(--header-color);
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem .85rem;
+    align-items: center;
+}
+
+header::before {
+    content: " ";
+    width: 100%;
+    height: .07rem;
+    background-color: var(--header-color);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: 1px solid var(--header-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header button{
+    border: 0;
+    background-color: transparent;
+    color: var(--header-color);
+    cursor: pointer;
+}
+
+.title-col{
+    font-weight: 700;
+}

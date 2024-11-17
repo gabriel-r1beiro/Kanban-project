@@ -1,0 +1,43 @@
+.column{
+    overflow: hidden;
+    margin-left: .5rem;
+    width: 22rem;
+    height: 40.75rem ;
+    margin-top: .5rem;
+    background: #f1f5f9;
+    border-radius: .5rem;
+    overflow-y: auto;
+    position: relative;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column::-webkit-scrollbar {
+    width: 0;
+}
+
+
+@media(max-width:1080px){
+    .column {
+        height: 47.25rem;
+        width: 22rem;
+    }
+}
+
+@media(max-width:720px){
+    .column {
+        height: 37.25rem;
+        width: 22rem;
+    }
+}
+
+@media(max-width:540px){
+    .column {
+        height: 47.25rem;
+        width: 22rem;
+    }
+}
